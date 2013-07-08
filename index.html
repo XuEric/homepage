@@ -5,9 +5,11 @@ full_posts: 3
 ---
 
 <div class='home-box' id='home-left'>
-  <h2><a href='atom.xml' class='float-right'
-      ><img src='/images/subscribe-icon.gif' alt='Subscribe'/></a
-      >最新博客（<a href='/blog.html'>更多</a>）</h2>
+  <h2>
+  	<a href='atom.xml' class='float-right'>
+  		<img src='/images/subscribe-icon.gif' alt='Subscribe'/>	
+  	</a>
+  	最新博客（<a href='/blog.html'>更多</a>）</h2>
 
 {% for post in site.posts limit:page.full_posts %}
   <div class='post'>
@@ -15,7 +17,6 @@ full_posts: 3
     <a href='{{post.url}}#comments' title='分享文章、查看评论' style="float:right;margin-right:.5em;">Comments</a>
     <h1><a href='{{post.url}}'>{{post.title}}</a></h1>
     <div class='body'>{{post.content}}</div>
-
   </div>
 {% endfor %}
 
