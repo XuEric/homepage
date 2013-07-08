@@ -59,7 +59,7 @@ a:visited {
 
 #menu ul li a {
   display: block;
-  background: url(/images/blog.gif) no-repeat top left;
+  background: url(/homepage/images/blog.gif) no-repeat top left;
   width: 69px;
   height: 94px;
   text-indent: -999em;
@@ -152,7 +152,7 @@ div.post h3 {
   font-size: 1em;
   background-color: #EEC9A6;
   padding: 3px 0 3px 5px;
--moz-border-radius-topleft: 8px; -webkit-border-top-left-radius: 8px; -khtml-border-top-left-radius: 8px; border-top-left-radius: 8px;
+  -moz-border-radius-topleft: 8px; -webkit-border-top-left-radius: 8px; -khtml-border-top-left-radius: 8px; border-top-left-radius: 8px;
   -moz-border-radius-topright: 8px; -webkit-border-top-right-radius: 8px; -khtml-border-top-right-radius: 8px; border-top-right-radius: 8px;
   -moz-border-radius-bottomleft: 8px; -webkit-border-bottom-left-radius: 8px; -khtml-border-bottom-left-radius: 8px; border-bottom-left-radius: 8px;
   -moz-border-radius-bottomright: 8px; -webkit-border-bottom-right-radius: 8px; -khtml-border-bottom-right-radius: 8px; border-bottom-right-radius: 8px;
