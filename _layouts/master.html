@@ -18,29 +18,27 @@
     <meta name="ujianVerification" content="e8f5292dbe28276a7e530a95c5832df3" />
 
     <title>{{ page.title }} - 足迹 - GRIDOR</title>
-    <link rel="stylesheet" href="/stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
-    <link rel="stylesheet" href="/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8"/>
-    <link type="text/css" rel="stylesheet" href="/javascripts/syntaxhighlighter/styles/shCoreMidnight.css"/>
-    <link type="text/css" rel="stylesheet" href="/javascripts/syntaxhighlighter/styles/shThemeMidnight.css"/>
-    <script src="/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
-    <script src="/javascripts/jquery.github.js" type="text/javascript" charset="utf-8"></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/master.css" type="text/css" media="screen" charset="utf-8"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/stylesheets/syntax.css" type="text/css" media="screen" charset="utf-8"/>
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/javascripts/syntaxhighlighter/styles/shCoreMidnight.css"/>
+    <link type="text/css" rel="stylesheet" href="{{ site.baseurl }}/javascripts/syntaxhighlighter/styles/shThemeMidnight.css"/>
+    <script src="{{ site.baseurl }}/javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="{{ site.baseurl }}/javascripts/jquery.github.js" type="text/javascript" charset="utf-8"></script>
   </head>
   <body>
-  <a href="http://github.com/GRIDOR/GRIDOR.github.com"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
+  <a href="http://github.com/XuEric/homepage"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png" alt="Fork me on GitHub"></a>
     <div id='wrapper'>
       <div id='header'>
         <h1><a href='/'>足迹</a></h1>
-        
         <div id='menu'>
           <ul>
-            <li><a href='/' id='home-link' title='Home'>首页</a></li>
-            <li><a href='/blog.html' id='blog-link' title='Blog'>博客</a></li>
-            <li><a href='/categories.html' id='categories-link' title='Categories'>分类</a></li>
-            <li><a href='/tags.html' id='tags-link' title='Tags'>标签</a></li>
-            <li><a href='/about.html' id='about-link' title='About'>关于</a></li>
-            <li><a href='http://github.com/GRIDOR' target='_blank' title='GitHub' rel='me' id='github-link'>GitHub</a></li>
+            <li><a href='{{ site.baseurl }}/' id='home-link' title='Home'>首页</a></li>
+            <li><a href='{{ site.baseurl }}/blog.html' id='blog-link' title='Blog'>博客</a></li>
+            <li><a href='{{ site.baseurl }}/categories.html' id='categories-link' title='Categories'>分类</a></li>
+            <li><a href='{{ site.baseurl }}/tags.html' id='tags-link' title='Tags'>标签</a></li>
+            <li><a href='{{ site.baseurl }}/about.html' id='about-link' title='About'>关于</a></li>
+            <li><a href='http://github.com/XuEric' target='_blank' title='GitHub' rel='me' id='github-link'>GitHub</a></li>
             <li><a href='http://weibo.com/kafeituzi' title='微博' target='_blank' id='weibo-link'>微博</a></li>
-            <li><a href='http://www.activiti-cn.org' title='论坛' target='_blank' id='forum-link'>论坛</a></li>
           </ul>
         </div>
       </div>
@@ -66,8 +64,8 @@
     </div>
 
     <!-- 语法高亮 BEGIN -->
-    <script src="/javascripts/syntaxhighlighter/scripts/shCore.js" type="text/javascript"></script>
-    <script src="/javascripts/syntaxhighlighter/scripts/shAutoloader.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/javascripts/syntaxhighlighter/scripts/shCore.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/javascripts/syntaxhighlighter/scripts/shAutoloader.js" type="text/javascript"></script>
     <script type="text/javascript">
     $(function() {
       SyntaxHighlighter.autoloader.apply(null, path(
@@ -103,7 +101,7 @@
       var args = arguments, result = [];
            
       for(var i = 0; i < args.length; i++) {
-        result.push(args[i].replace('@', '/javascripts/syntaxhighlighter/scripts/'));
+        result.push(args[i].replace('@', '{{ site.baseurl }}/javascripts/syntaxhighlighter/scripts/'));
       }
       return result;
     };
