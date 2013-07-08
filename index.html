@@ -28,7 +28,7 @@ full_posts: 3
     <div class="sidebar-item">
       <div style="padding:3px 0 3px 10px;font-size:15px;"><span style="color:#71ABC7"><strong>while</strong></span> ( <span style="color:#B6D785">true</span> ) <span style="color:#F89653">分享</span>(); </div>
       <ul style="margin-top: -3px">
-        <li>QQ：576525789</li>
+        <li>QQ：9999025</li>
       </ul>
     </div>
   </div>
@@ -39,7 +39,7 @@ full_posts: 3
     <div class="sidebar-item">
     <ul class='sidebar-posts'>
       {% for post in site.posts limit:10 %}
-      <li title='发布日期：{{post.date | date: "%d %b %Y"}}'><a href='{{post.url}}'>{{post.title}}</a></li>
+      <li title='发布日期：{{post.date | date: "%d %b %Y"}}'><a href='{{ site.baseurl }}{{post.url}}'>{{post.title}}</a></li>
       {% endfor %}
     </ul>
     </div>
@@ -57,7 +57,7 @@ full_posts: 3
     <div class="sidebar-item">
     <ul class="ds-recent-comments" data-num-items="5" data-show-avatars="1" data-show-time="1" data-show-title="1" data-show-admin="1" data-excerpt-length="70"></ul>
 	<script>if (typeof DUOSHUO !== 'undefined')
-	DUOSHUO.RecentComments('.ds-recent-visitors');</script>
+		DUOSHUO.RecentComments('.ds-recent-visitors');</script>
     </div>
   </div>
 
@@ -70,33 +70,15 @@ full_posts: 3
     </div>
   </div>
 
-  <h2 style="display:none">近期计划</h2>
-  <div class='sidebar' style="display:none">
-    <div class="sidebar-item">
-    <ul>
-      <li>CAS升级篇，和spring security整合</li>
-      <li>Git GUI增强工具SmartGit</li>
-	  <li>附件插件：jquery.attachment.js</li>
-    </ul>
-    </div>
-  </div>
 
   <h2>联系方式</h2>
   <div class='sidebar'>
     <div class="sidebar-item">
     <ul>
-      <li>邮件：yanhonglei[@]gmail.com</li>
-      <li>QQ ：576525789</li>
-      <li>微博：<a href="http://weibo.com/kafeituzi" target="_blank">@kafeituzi</a></li>
-      <li>豆瓣：<a href="http://book.douban.com/people/kafeitu/" target="_blank">kafeitu</a></li>
+      <li>邮件：gridor[@]gmail.com</li>
+      <li>QQ ：9999025</li>
+      <li>微博：<a href="http://weibo.com/u/3109072835" target="_blank">@kafeituzi</a></li>
     </ul>
-    </div>
-  </div>
-
-  <h2>微博</h2>
-  <div class='sidebar'>
-    <div class="sidebar-item">
-		<iframe width="245" height="550" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=245&height=550&fansRow=2&ptype=1&speed=0&skin=3&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=1883607704&verifier=4b99344e&dpc=1"></iframe>
     </div>
   </div>
 
