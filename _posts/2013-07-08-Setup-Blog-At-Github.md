@@ -4,7 +4,7 @@ title: 在Github上建立Blog
 ---
 # {{ page.title }} #
 
-大致步骤：
+## 大致步骤： ##
 
 1. 申请Github帐号
 2. 在客户端上安装git工具
