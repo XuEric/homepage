@@ -5,24 +5,27 @@ title: MQ HA with MQ Client Connection Define Table
 # {{ page.title }} #
 
 
-## Define Server Connection at Gateway QM ##
+## Define SERVER Connection at Gateway QMes ##
 在TPQM上定义：
+
 ```
-#!sh
+#!bash
 echo "DEFINE LISTENER (LSR1) TRPTYPE(TCP) CONTROL(QMGR) PORT(31000) REPLACE" | runmqsc TPQM
 echo "START LISTENER (LSR1) " | runmqsc TPQM
 echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP) DESCR('SVR CONN') REPLACE" | runmqsc TPQM
 echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(31000)') DESCR('clnt conn to TPQM') QMNAME(TPQM) REPLACE" | runmqsc TPQM
 ```
+
 在TPQMBK上定义：
+
 ```
-#!sh
+#!bash
 echo "DEFINE LISTENER (LSR1) TRPTYPE(TCP) CONTROL(QMGR) PORT(32000) REPLACE" | runmqsc TPQMBK
 echo "START LISTENER (LSR1) " | runmqsc TPQMBK
 echo "DEFINE CHANNEL(SVRCONNBK) CHLTYPE(SVRCONN) TRPTYPE(TCP) DESCR('SVR CONN') REPLACE" | runmqsc TPQMBK
 ```
 
-## Define Client Connection Channel at Gateway QM ##
+## Define CLIENT Connection Channel at Gateway QM ##
 在TPQM上定义：
 ```
 #!sh
