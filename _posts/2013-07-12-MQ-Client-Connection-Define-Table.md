@@ -22,7 +22,9 @@ echo "START LISTENER (LSR1) " | runmqsc TPQMBK
 echo "DEFINE CHANNEL(SVRCONNBK) CHLTYPE(SVRCONN) TRPTYPE(TCP) DESCR('SVR CONN') REPLACE" | runmqsc TPQMBK
 </pre>
 
-## Define CLIENT Connection Channel at Gateway QM ##
+## Define CLIENT Connection Channel at Gateway QMes ##
+在TPQM上定义：
+
 <pre class="brush:bash">
 echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(31000)') DESCR('clnt conn to TPQM') QMNAME(TPQM) REPLACE" | runmqsc TPQM
 echo "DEFINE CHANNEL(SVRCONNBK) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(32000)') DESCR('clnt conn to TPQMBK') QMNAME(TPQM) REPLACE" | runmqsc TPQM
