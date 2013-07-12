@@ -10,13 +10,14 @@ title: eCommerce Technical Component
 ## java_exception  ##
 
 ## varnish         ##
+[varnish offical web site](https://www.varnish-cache.org/)
 
 ## logback_slf4j   ##
 
 ## sitemesh        ##
 
 ## redis           ##
-
+key-value store, 
 ## jedis           ##
 
 ## dal             ##
