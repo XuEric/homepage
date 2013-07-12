@@ -61,7 +61,7 @@ public class MQSample {
 			MQEnvironment.enableTracing(1); // start trace
 
 			java.net.URL chanTab1 = new URL(
-					"ftp://esbsd:esbsd@52.97.0.11/../../var/mqm/qmgrs/TPQM/@ipcc/AMQCLCHL.TAB");
+					"ftp://user:passwd@52.97.0.11/../../var/mqm/qmgrs/TPQM/@ipcc/AMQCLCHL.TAB");
 
 			MQQueueManager qMgr = new MQQueueManager(qManager, chanTab1);
 
