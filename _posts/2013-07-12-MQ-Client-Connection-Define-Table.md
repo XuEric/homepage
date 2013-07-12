@@ -8,13 +8,14 @@ title: MQ HA with MQ Client Connection Define Table
 ## Define SERVER Connection at Gateway QMes ##
 在TPQM上定义：
 
-```
+<pre class="brush:bash">
+
 #!bash
 echo "DEFINE LISTENER (LSR1) TRPTYPE(TCP) CONTROL(QMGR) PORT(31000) REPLACE" | runmqsc TPQM
 echo "START LISTENER (LSR1) " | runmqsc TPQM
 echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(SVRCONN) TRPTYPE(TCP) DESCR('SVR CONN') REPLACE" | runmqsc TPQM
 echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(31000)') DESCR('clnt conn to TPQM') QMNAME(TPQM) REPLACE" | runmqsc TPQM
-```
+</pre>
 
 在TPQMBK上定义：
 
@@ -33,8 +34,7 @@ echo "DEFINE CHANNEL(SVRCONN) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(
 echo "DEFINE CHANNEL(SVRCONNBK) CHLTYPE(CLNTCONN) TRPTYPE(TCP) CONNAME('127.0.0.1(32000)') DESCR('clnt conn to TPQMBK') QMNAME(TPQM) REPLACE" | runmqsc TPQM
 ```
 
-```
-#!java
+<pre class="brush:java">
 package mqclient;
 
 import java.net.URL;
@@ -128,4 +128,4 @@ public class MQSample {
 		}
 	}
 }
-```
+</pre>
