@@ -33,8 +33,7 @@ package mqclient;
 
 import java.net.URL;
 import java.util.Hashtable;
-
-import com.ibm.mq.*; //Include the WebSphere MQ classes for Java package
+import com.ibm.mq.*;
 
 public class MQSample {
 
