@@ -4,7 +4,8 @@ title: MQ HA with MQ Client Connection Define Table
 ---
 # {{ page.title }} #
 
-通过CCDT，可以实现一个客户端连接到多个不同的QM上，可选的策略包括
+通过CCDT，可以实现一个客户端连接到多个不同的QM上，可选的策略包括:
+
 1. 基于轮转的负载均衡
 2. 基于权重的负载均衡
 3. 客户端亲缘
