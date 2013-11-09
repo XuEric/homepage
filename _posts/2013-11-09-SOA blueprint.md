@@ -1,6 +1,6 @@
 ---
 layout: master
-title: Unlabel
+title: SOA blueprint
 ---
 # {{ page.title }} #
 
