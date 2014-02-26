@@ -54,9 +54,9 @@ supervisor.slots.ports:
 </pre>
 ### 5. Launch Nimbus and Supervisor ###
 
-1.Nimbus: Run the command "bin/storm nimbus" under supervision on the master machine.
-2.Supervisor: Run the command "bin/storm supervisor" under supervision on each worker machine. The supervisor daemon is responsible for starting and stopping worker processes on that machine.
-3.UI: Run the Storm UI (a site you can access from the browser that gives diagnostics on the cluster and topologies) by running the command "bin/storm ui" under supervision. The UI can be accessed by navigating your web browser to http://{nimbus host}:8080.
+1.  Nimbus: Run the command "bin/storm nimbus" under supervision on the master machine.
+2.  Supervisor: Run the command "bin/storm supervisor" under supervision on each worker machine. The supervisor daemon is responsible for starting and stopping worker processes on that machine.
+3.  UI: Run the Storm UI (a site you can access from the browser that gives diagnostics on the cluster and topologies) by running the command "bin/storm ui" under supervision. The UI can be accessed by navigating your web browser to http://{nimbus host}:8080.
 
 
 
